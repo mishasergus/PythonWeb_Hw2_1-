@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Помилка - Сайт-візитка{% endblock %}
+
+{% block content %}
+<div class="error-container">
+    <h1>404</h1>
+    <h2>Проєкт не знайдено</h2>
+    <p>На жаль, такого проєкту не існує або він був видалений.</p>
+    <a href="{{ url_for('index') }}" class="btn">Повернутися на головну</a>
+</div>
+{% endblock %}

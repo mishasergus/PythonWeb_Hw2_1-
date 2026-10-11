@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }} - Сайт-візитка{% endblock %}
+
+{% block content %}
+<div class="project-detail">
+    <h1>{{ project.title }}</h1>
+    <p class="project-desc">{{ project.description }}</p>
+    
+    <div class="project-meta">
+        <span class="badge">ID проєкту: {{ project.id }}</span>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="btn">Повернутися на головну</a>
+</div>
+{% endblock %}
